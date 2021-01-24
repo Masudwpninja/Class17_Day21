@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 70%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header css starts form here */
+
+.header-part{
+    background-color: #000000;
+}
+.header-part ul{
+    text-align: center;
+    list-style-type: none;
+}
+.header-part ul li{
+  display: inline-block;
+  position: relative;
+}
+.header-part ul li a {
+	display: inline-block;
+	color: #A5A0A4;
+	padding: 34px 20px;
+	text-decoration: none;
+	font-family: tahoma;
+	font-weight: 300;
+	font-size: 15px;
+}
+/* DropDown 1 */
+.header-part ul ul{
+	position: absolute;
+	width: 199px;
+	background: #222222;
+	left: 14px;
+	top: 100%;
+	border-top: 3px solid #4272D8;
+}
+.header-part ul li ul li{
+	display: block;
+}
+.header-part ul li ul li a {
+	display: block;
+	border-bottom: 1px solid #413d3d;
+	padding: 10px 0;
+	font-size: 12px;
+	color: white;
+}
+/* Hover part css */
+
+.header-part ul li:hover > a {
+	color: white;
+}
+.header-part ul ul li:hover > a {
+	background-color: #4272D8;
+}
+.header-part ul ul {
+	position: absolute;
+	width: 199px;
+	background: #222222;
+	left: 14px;
+	top: 100%;
+	border-top: 3px solid #4272D8;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s;
+	transform: scaleY(0);
+	transform-origin: top center;
+}
+.header-part ul li:hover > ul {
+	visibility: visible;
+	opacity: 1;
+	transform: scaleY(1);
+}
+
+
+/* DropDown 2 */
+
+.header-part ul li ul li ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+/* slider-part css is here */
+.slider-part {
+	background-image: url(people.jpg);
+	padding: 145px 0 150px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: bottom center;
+}
+.slider-part h2 {
+	background: white;
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.slider-part p {
+	background: white;
+	margin: 10px 20px;
+	padding: 2px 0;
+	font-size: 20px;
+}
+.slider-part a {
+	text-decoration: none;
+	color: white;
+	background: black;
+	padding: 8px 10px;
+	margin-top: 15px;
+	display: inline-block;
+	font-size: 13px;
+}
+/* Footer css */
+
+.footer-part {
+	background: black;
+	color: white;
+	text-align: center;
+}
+.footer-part p {
+	font-size: 13px;
+	padding-top: 12px;
+}
+.social-menu li {
+	display: inline-block;
+}
+.social-menu li a {
+	text-decoration: none;
+	color: #020207;
+	display: inline-block;
+	padding: 6px;
+	background: #5ea5fa;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin: 19px 3px;
+}
+.social-menu li a:hover {
+	color: white;
+	background: aqua;
+}
